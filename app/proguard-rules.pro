@@ -1,1 +1,1 @@
--keep class org.fossify.calendar.models.** { *; }
+-keep class de.lionsun.plantags.models.** { *; }

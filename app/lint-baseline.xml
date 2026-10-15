@@ -7,7 +7,7 @@
         errorLine1="            String.format(&quot;%02d:00&quot;, hours)"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/SettingsActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/SettingsActivity.kt"
             line="788"
             column="13"/>
     </issue>
@@ -62,7 +62,7 @@
         errorLine1="            launchChangeAppLanguageIntent()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/SettingsActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/SettingsActivity.kt"
             line="325"
             column="13"/>
     </issue>
@@ -84,7 +84,7 @@
         errorLine1="            val format = SimpleDateFormat(&quot;hh.mm aa&quot;)"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/SettingsActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/SettingsActivity.kt"
             line="793"
             column="26"/>
     </issue>
@@ -205,7 +205,7 @@
         errorLine1="class SplashActivity : BaseSplashActivity() {"
         errorLine2="      ~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/SplashActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/SplashActivity.kt"
             line="9"
             column="7"/>
     </issue>
@@ -216,7 +216,7 @@
         errorLine1="class CalDAVUpdateListener : JobService() {"
         errorLine2="      ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/jobs/CalDAVUpdateListener.kt"
+            file="src/main/kotlin/de/lionsun/plantags/jobs/CalDAVUpdateListener.kt"
             line="17"
             column="7"/>
     </issue>
@@ -337,7 +337,7 @@
         errorLine1="        datePicker.findViewById&lt;View>(Resources.getSystem().getIdentifier(&quot;day&quot;, &quot;id&quot;, &quot;android&quot;)).beGone()"
         errorLine2="                                                            ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthDayFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthDayFragmentsHolder.kt"
             line="111"
             column="61"/>
     </issue>
@@ -348,7 +348,7 @@
         errorLine1="        datePicker.findViewById&lt;View>(Resources.getSystem().getIdentifier(&quot;day&quot;, &quot;id&quot;, &quot;android&quot;)).beGone()"
         errorLine2="                                                            ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthFragmentsHolder.kt"
             line="113"
             column="61"/>
     </issue>
@@ -359,7 +359,7 @@
         errorLine1="            val id = res.getIdentifier(&quot;week_num_$i&quot;, &quot;id&quot;, packageName)"
         errorLine2="                         ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/MyWidgetMonthlyProvider.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/MyWidgetMonthlyProvider.kt"
             line="112"
             column="26"/>
     </issue>
@@ -370,7 +370,7 @@
         errorLine1="            val id = res.getIdentifier(&quot;day_$i&quot;, &quot;id&quot;, packageName)"
         errorLine2="                         ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/MyWidgetMonthlyProvider.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/MyWidgetMonthlyProvider.kt"
             line="159"
             column="26"/>
     </issue>
@@ -381,7 +381,7 @@
         errorLine1="            val id = resources.getIdentifier(&quot;label_$i&quot;, &quot;id&quot;, packageName)"
         errorLine2="                               ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/MyWidgetMonthlyProvider.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/MyWidgetMonthlyProvider.kt"
             line="340"
             column="32"/>
     </issue>
@@ -392,7 +392,7 @@
         errorLine1="        datePicker.findViewById&lt;View>(Resources.getSystem().getIdentifier(&quot;day&quot;, &quot;id&quot;, &quot;android&quot;)).beGone()"
         errorLine2="                                                            ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/YearFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/YearFragmentsHolder.kt"
             line="104"
             column="61"/>
     </issue>
@@ -403,7 +403,7 @@
         errorLine1="        datePicker.findViewById&lt;View>(Resources.getSystem().getIdentifier(&quot;month&quot;, &quot;id&quot;, &quot;android&quot;)).beGone()"
         errorLine2="                                                            ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/YearFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/YearFragmentsHolder.kt"
             line="105"
             column="61"/>
     </issue>
@@ -414,7 +414,7 @@
         errorLine1="@TargetApi(Build.VERSION_CODES.N)"
         errorLine2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/jobs/CalDAVUpdateListener.kt"
+            file="src/main/kotlin/de/lionsun/plantags/jobs/CalDAVUpdateListener.kt"
             line="16"
             column="1"/>
     </issue>
@@ -425,7 +425,7 @@
         errorLine1="        val backgroundDrawable = res.getDrawable(R.drawable.day_monthly_event_background)"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/extensions/Context.kt"
+            file="src/main/kotlin/de/lionsun/plantags/extensions/Context.kt"
             line="804"
             column="34"/>
     </issue>
@@ -436,7 +436,7 @@
         errorLine1="            val pointerLeft = requireContext().getDrawable(org.fossify.commons.R.drawable.ic_chevron_left_vector)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/DayFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/DayFragment.kt"
             line="57"
             column="31"/>
     </issue>
@@ -447,7 +447,7 @@
         errorLine1="            val pointerRight = requireContext().getDrawable(org.fossify.commons.R.drawable.ic_chevron_right_vector)"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/DayFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/DayFragment.kt"
             line="70"
             column="32"/>
     </issue>
@@ -458,7 +458,7 @@
         errorLine1="                resources.getDrawable(R.drawable.attendee_status_circular_background)"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/EventActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/EventActivity.kt"
             line="2177"
             column="17"/>
     </issue>
@@ -469,7 +469,7 @@
         errorLine1="        return resources.getDrawable("
         errorLine2="               ^">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/EventActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/EventActivity.kt"
             line="2239"
             column="16"/>
     </issue>
@@ -480,7 +480,7 @@
         errorLine1="        val newEventDrawable = resources.getDrawable(R.drawable.shortcut_event, theme)"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/MainActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/MainActivity.kt"
             line="489"
             column="32"/>
     </issue>
@@ -491,7 +491,7 @@
         errorLine1="        val newTaskDrawable = resources.getDrawable(R.drawable.shortcut_task, theme)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/MainActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/MainActivity.kt"
             line="507"
             column="31"/>
     </issue>
@@ -502,7 +502,7 @@
         errorLine1="            val pointerLeft = requireContext().getDrawable(org.fossify.commons.R.drawable.ic_chevron_left_vector)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthFragment.kt"
             line="121"
             column="31"/>
     </issue>
@@ -513,7 +513,7 @@
         errorLine1="            val pointerRight = requireContext().getDrawable(org.fossify.commons.R.drawable.ic_chevron_right_vector)"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthFragment.kt"
             line="134"
             column="32"/>
     </issue>
@@ -524,7 +524,7 @@
         errorLine1="    val baseDrawable = res.getDrawable(drawableId).toBitmap(drawableHeight, drawableHeight)"
         errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/extensions/TextView.kt"
+            file="src/main/kotlin/de/lionsun/plantags/extensions/TextView.kt"
             line="13"
             column="24"/>
     </issue>
@@ -535,7 +535,7 @@
         errorLine1="            val pointerLeft = requireContext().getDrawable(org.fossify.commons.R.drawable.ic_chevron_left_vector)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/YearFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/YearFragment.kt"
             line="131"
             column="31"/>
     </issue>
@@ -546,7 +546,7 @@
         errorLine1="            val pointerRight = requireContext().getDrawable(org.fossify.commons.R.drawable.ic_chevron_right_vector)"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/YearFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/YearFragment.kt"
             line="143"
             column="32"/>
     </issue>
@@ -3659,7 +3659,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/DayEventsAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/DayEventsAdapter.kt"
             line="85"
             column="9"/>
     </issue>
@@ -3670,7 +3670,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/EventListAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/EventListAdapter.kt"
             line="111"
             column="9"/>
     </issue>
@@ -3681,7 +3681,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/EventListAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/EventListAdapter.kt"
             line="119"
             column="13"/>
     </issue>
@@ -3692,7 +3692,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/EventListAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/EventListAdapter.kt"
             line="131"
             column="9"/>
     </issue>
@@ -3703,7 +3703,7 @@
         errorLine1="        notifyDataSetChanged()"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/SelectTimeZoneAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/SelectTimeZoneAdapter.kt"
             line="29"
             column="9"/>
     </issue>
@@ -3736,7 +3736,7 @@
         errorLine1="@TargetApi(Build.VERSION_CODES.N)"
         errorLine2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/jobs/CalDAVUpdateListener.kt"
+            file="src/main/kotlin/de/lionsun/plantags/jobs/CalDAVUpdateListener.kt"
             line="16"
             column="1"/>
     </issue>
@@ -4169,7 +4169,7 @@
     <issue
         id="UnusedResources"
         message="The resource `R.string.package_name` appears to be unused"
-        errorLine1="    &lt;string name=&quot;package_name&quot;>org.fossify.calendar&lt;/string>"
+        errorLine1="    &lt;string name=&quot;package_name&quot;>de.lionsun.plantags&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/donottranslate.xml"
@@ -4537,7 +4537,7 @@
         errorLine1="                shortcutManager.dynamicShortcuts = shortcuts"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/MainActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/MainActivity.kt"
             line="479"
             column="17"/>
     </issue>
@@ -4548,7 +4548,7 @@
         errorLine1="            val placeholder = BitmapDrawable("
         errorLine2="                              ^">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/AutoCompleteTextViewAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/AutoCompleteTextViewAdapter.kt"
             line="58"
             column="31"/>
     </issue>
@@ -4559,7 +4559,7 @@
         errorLine1="        set(showWeekNumbers) = prefs.edit().putBoolean(WEEK_NUMBERS, showWeekNumbers).apply()"
         errorLine2="                               ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="21"
             column="32"/>
     </issue>
@@ -4570,7 +4570,7 @@
         errorLine1="        set(startWeeklyAt) = prefs.edit().putInt(START_WEEKLY_AT, startWeeklyAt).apply()"
         errorLine2="                             ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="25"
             column="30"/>
     </issue>
@@ -4581,7 +4581,7 @@
         errorLine1="        set(startWeekWithCurrentDay) = prefs.edit()"
         errorLine2="                                       ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="29"
             column="40"/>
     </issue>
@@ -4592,7 +4592,7 @@
         errorLine1="        set(midnightSpanning) = prefs.edit()"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="34"
             column="33"/>
     </issue>
@@ -4603,7 +4603,7 @@
         errorLine1="        set(allow) = prefs.edit().putBoolean(ALLOW_CUSTOMIZE_DAY_COUNT, allow).apply()"
         errorLine2="                     ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="39"
             column="22"/>
     </issue>
@@ -4614,7 +4614,7 @@
         errorLine1="        set(vibrate) = prefs.edit().putBoolean(VIBRATE, vibrate).apply()"
         errorLine2="                       ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="43"
             column="24"/>
     </issue>
@@ -4625,7 +4625,7 @@
         errorLine1="        set(reminderSoundUri) = prefs.edit().putString(REMINDER_SOUND_URI, reminderSoundUri).apply()"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="51"
             column="33"/>
     </issue>
@@ -4636,7 +4636,7 @@
         errorLine1="        set(reminderSoundTitle) = prefs.edit().putString(REMINDER_SOUND_TITLE, reminderSoundTitle)"
         errorLine2="                                  ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="59"
             column="35"/>
     </issue>
@@ -4647,7 +4647,7 @@
         errorLine1="        set(lastSoundUri) = prefs.edit().putString(LAST_SOUND_URI, lastSoundUri).apply()"
         errorLine2="                            ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="65"
             column="29"/>
     </issue>
@@ -4658,7 +4658,7 @@
         errorLine1="        set(lastReminderChannel) = prefs.edit()"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="69"
             column="36"/>
     </issue>
@@ -4669,7 +4669,7 @@
         errorLine1="        set(view) = prefs.edit().putInt(VIEW, view).apply()"
         errorLine2="                    ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="74"
             column="21"/>
     </issue>
@@ -4680,7 +4680,7 @@
         errorLine1="        set(lastEventReminderMinutes) = prefs.edit()"
         errorLine2="                                        ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="78"
             column="41"/>
     </issue>
@@ -4691,7 +4691,7 @@
         errorLine1="        set(lastEventReminderMinutes2) = prefs.edit()"
         errorLine2="                                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="83"
             column="42"/>
     </issue>
@@ -4702,7 +4702,7 @@
         errorLine1="        set(lastEventReminderMinutes3) = prefs.edit()"
         errorLine2="                                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="88"
             column="42"/>
     </issue>
@@ -4713,7 +4713,7 @@
         errorLine1="        set(displayPastEvents) = prefs.edit().putInt(DISPLAY_PAST_EVENTS, displayPastEvents).apply()"
         errorLine2="                                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="93"
             column="34"/>
     </issue>
@@ -4724,7 +4724,7 @@
         errorLine1="        set(displayCalendars) = prefs.edit().remove(DISPLAY_CALENDARS)"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="97"
             column="33"/>
     </issue>
@@ -4735,7 +4735,7 @@
         errorLine1="        set(quickFilterCalendars) = prefs.edit().remove(QUICK_FILTER_CALENDARS)"
         errorLine2="                                    ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="102"
             column="37"/>
     </issue>
@@ -4746,7 +4746,7 @@
         errorLine1="        set(show) = prefs.edit().putBoolean(HOLIDAY_MANAGEMENT_NOTICE, show).apply()"
         errorLine2="                    ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="126"
             column="21"/>
     </issue>
@@ -4757,7 +4757,7 @@
         errorLine1="        prefs.edit()"
         errorLine2="        ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="135"
             column="9"/>
     </issue>
@@ -4768,7 +4768,7 @@
         errorLine1="        set(viewToOpenFromListWidget) = prefs.edit()"
         errorLine2="                                        ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="143"
             column="41"/>
     </issue>
@@ -4779,7 +4779,7 @@
         errorLine1="            prefs.edit().putBoolean(CALDAV_SYNC, caldavSync).apply()"
         errorLine2="            ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="150"
             column="13"/>
     </issue>
@@ -4790,7 +4790,7 @@
         errorLine1="        set(calendarIDs) = prefs.edit().putString(CALDAV_SYNCED_CALENDAR_IDS, calendarIDs).apply()"
         errorLine2="                           ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="155"
             column="28"/>
     </issue>
@@ -4801,7 +4801,7 @@
         errorLine1="        set(calendarId) = prefs.edit().putInt(LAST_USED_CALDAV_CALENDAR, calendarId).apply()"
         errorLine2="                          ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="162"
             column="27"/>
     </issue>
@@ -4812,7 +4812,7 @@
         errorLine1="        set(lastUsedLocalCalendarId) = prefs.edit()"
         errorLine2="                                       ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="166"
             column="40"/>
     </issue>
@@ -4823,7 +4823,7 @@
         errorLine1="        set(lastUsedIgnoreCalendarsState) = prefs.edit()"
         errorLine2="                                            ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="171"
             column="45"/>
     </issue>
@@ -4834,7 +4834,7 @@
         errorLine1="        set(reminderAudioStream) = prefs.edit().putInt(REMINDER_AUDIO_STREAM, reminderAudioStream)"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="176"
             column="36"/>
     </issue>
@@ -4845,7 +4845,7 @@
         errorLine1="        set(replaceDescription) = prefs.edit().putBoolean(REPLACE_DESCRIPTION, replaceDescription)"
         errorLine2="                                  ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="181"
             column="35"/>
     </issue>
@@ -4856,7 +4856,7 @@
         errorLine1="        set(displayDescription) = prefs.edit().putBoolean(DISPLAY_DESCRIPTION, displayDescription)"
         errorLine2="                                  ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="186"
             column="35"/>
     </issue>
@@ -4867,7 +4867,7 @@
         errorLine1="        set(showGrid) = prefs.edit().putBoolean(SHOW_GRID, showGrid).apply()"
         errorLine2="                        ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="191"
             column="25"/>
     </issue>
@@ -4878,7 +4878,7 @@
         errorLine1="        set(loopReminders) = prefs.edit().putBoolean(LOOP_REMINDERS, loopReminders).apply()"
         errorLine2="                             ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="195"
             column="30"/>
     </issue>
@@ -4889,7 +4889,7 @@
         errorLine1="        set(dimPastEvents) = prefs.edit().putBoolean(DIM_PAST_EVENTS, dimPastEvents).apply()"
         errorLine2="                             ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="199"
             column="30"/>
     </issue>
@@ -4900,7 +4900,7 @@
         errorLine1="        set(dimCompletedTasks) = prefs.edit().putBoolean(DIM_COMPLETED_TASKS, dimCompletedTasks)"
         errorLine2="                                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="203"
             column="34"/>
     </issue>
@@ -4911,7 +4911,7 @@
         errorLine1="        set(usePreviousEventReminders) = prefs.edit()"
         errorLine2="                                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="231"
             column="42"/>
     </issue>
@@ -4922,7 +4922,7 @@
         errorLine1="        set(defaultReminder1) = prefs.edit().putInt(DEFAULT_REMINDER_1, defaultReminder1).apply()"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="236"
             column="33"/>
     </issue>
@@ -4933,7 +4933,7 @@
         errorLine1="        set(defaultReminder2) = prefs.edit().putInt(DEFAULT_REMINDER_2, defaultReminder2).apply()"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="240"
             column="33"/>
     </issue>
@@ -4944,7 +4944,7 @@
         errorLine1="        set(defaultReminder3) = prefs.edit().putInt(DEFAULT_REMINDER_3, defaultReminder3).apply()"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="244"
             column="33"/>
     </issue>
@@ -4955,7 +4955,7 @@
         errorLine1="        set(pullToRefresh) = prefs.edit().putBoolean(PULL_TO_REFRESH, pullToRefresh).apply()"
         errorLine2="                             ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="248"
             column="30"/>
     </issue>
@@ -4966,7 +4966,7 @@
         errorLine1="        set(lastVibrateOnReminder) = prefs.edit()"
         errorLine2="                                     ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="252"
             column="38"/>
     </issue>
@@ -4977,7 +4977,7 @@
         errorLine1="        set(defaultStartTime) = prefs.edit().putInt(DEFAULT_START_TIME, defaultStartTime).apply()"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="257"
             column="33"/>
     </issue>
@@ -4988,7 +4988,7 @@
         errorLine1="        set(defaultDuration) = prefs.edit().putInt(DEFAULT_DURATION, defaultDuration).apply()"
         errorLine2="                               ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="261"
             column="32"/>
     </issue>
@@ -4999,7 +4999,7 @@
         errorLine1="        set(defaultCalendarId) = prefs.edit().putLong(DEFAULT_CALENDAR_ID, defaultCalendarId)"
         errorLine2="                                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="265"
             column="34"/>
     </issue>
@@ -5010,7 +5010,7 @@
         errorLine1="        set(allowChangingTimeZones) = prefs.edit()"
         errorLine2="                                      ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="270"
             column="39"/>
     </issue>
@@ -5021,7 +5021,7 @@
         errorLine1="        set(addBirthdaysAutomatically) = prefs.edit()"
         errorLine2="                                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="275"
             column="42"/>
     </issue>
@@ -5032,7 +5032,7 @@
         errorLine1="        set(addAnniversariesAutomatically) = prefs.edit()"
         errorLine2="                                             ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="280"
             column="46"/>
     </issue>
@@ -5043,7 +5043,7 @@
         errorLine1="        set(birthdayReminders) = prefs.edit()"
         errorLine2="                                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="286"
             column="34"/>
     </issue>
@@ -5054,7 +5054,7 @@
         errorLine1="        set(anniversaryReminders) = prefs.edit()"
         errorLine2="                                    ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="292"
             column="37"/>
     </issue>
@@ -5065,7 +5065,7 @@
         errorLine1="        set(exportEvents) = prefs.edit().putBoolean(EXPORT_EVENTS, exportEvents).apply()"
         errorLine2="                            ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="297"
             column="29"/>
     </issue>
@@ -5076,7 +5076,7 @@
         errorLine1="        set(exportTasks) = prefs.edit().putBoolean(EXPORT_TASKS, exportTasks).apply()"
         errorLine2="                           ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="301"
             column="28"/>
     </issue>
@@ -5087,7 +5087,7 @@
         errorLine1="        set(exportPastEvents) = prefs.edit().putBoolean(EXPORT_PAST_EVENTS, exportPastEvents)"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="305"
             column="33"/>
     </issue>
@@ -5098,7 +5098,7 @@
         errorLine1="        set(weeklyViewItemHeightMultiplier) = prefs.edit()"
         errorLine2="                                              ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="310"
             column="47"/>
     </issue>
@@ -5109,7 +5109,7 @@
         errorLine1="        set(weeklyViewDays) = prefs.edit().putInt(WEEKLY_VIEW_DAYS, weeklyViewDays).apply()"
         errorLine2="                              ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="315"
             column="31"/>
     </issue>
@@ -5120,7 +5120,7 @@
         errorLine1="        set(highlightWeekends) = prefs.edit().putBoolean(HIGHLIGHT_WEEKENDS, highlightWeekends)"
         errorLine2="                                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="319"
             column="34"/>
     </issue>
@@ -5131,7 +5131,7 @@
         errorLine1="        set(highlightWeekendsColor) = prefs.edit()"
         errorLine2="                                      ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="324"
             column="39"/>
     </issue>
@@ -5142,7 +5142,7 @@
         errorLine1="        set(lastUsedEventSpan) = prefs.edit().putInt(LAST_USED_EVENT_SPAN, lastUsedEventSpan)"
         errorLine2="                                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="329"
             column="34"/>
     </issue>
@@ -5153,7 +5153,7 @@
         errorLine1="        set(allowCreatingTasks) = prefs.edit().putBoolean(ALLOW_CREATING_TASKS, allowCreatingTasks)"
         errorLine2="                                  ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="334"
             column="35"/>
     </issue>
@@ -5164,7 +5164,7 @@
         errorLine1="        set(wasFilteredOutWarningShown) = prefs.edit()"
         errorLine2="                                          ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="339"
             column="43"/>
     </issue>
@@ -5175,7 +5175,7 @@
         errorLine1="        set(autoBackupCalendars) = prefs.edit().remove(AUTO_BACKUP_CALENDARS)"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="344"
             column="36"/>
     </issue>
@@ -5186,7 +5186,7 @@
         errorLine1="        set(autoBackupEvents) = prefs.edit().putBoolean(AUTO_BACKUP_EVENTS, autoBackupEvents)"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="349"
             column="33"/>
     </issue>
@@ -5197,7 +5197,7 @@
         errorLine1="        set(autoBackupTasks) = prefs.edit().putBoolean(AUTO_BACKUP_TASKS, autoBackupTasks).apply()"
         errorLine2="                               ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="354"
             column="32"/>
     </issue>
@@ -5208,7 +5208,7 @@
         errorLine1="        set(autoBackupPastEntries) = prefs.edit()"
         errorLine2="                                     ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="358"
             column="38"/>
     </issue>
@@ -5219,7 +5219,7 @@
         errorLine1="        set(lastUsedShowListWidgetHeader) = prefs.edit()"
         errorLine2="                                            ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/helpers/Config.kt"
+            file="src/main/kotlin/de/lionsun/plantags/helpers/Config.kt"
             line="363"
             column="45"/>
     </issue>
@@ -5230,7 +5230,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/DayFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/DayFragmentsHolder.kt"
             line="42"
             column="35"/>
     </issue>
@@ -5241,7 +5241,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/DayFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/DayFragmentsHolder.kt"
             line="42"
             column="35"/>
     </issue>
@@ -5252,7 +5252,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/EventListFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/EventListFragment.kt"
             line="71"
             column="35"/>
     </issue>
@@ -5263,7 +5263,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/EventListFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/EventListFragment.kt"
             line="71"
             column="35"/>
     </issue>
@@ -5274,7 +5274,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthDayFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthDayFragmentsHolder.kt"
             line="45"
             column="35"/>
     </issue>
@@ -5285,7 +5285,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthDayFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthDayFragmentsHolder.kt"
             line="45"
             column="35"/>
     </issue>
@@ -5296,7 +5296,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthFragmentsHolder.kt"
             line="45"
             column="35"/>
     </issue>
@@ -5307,7 +5307,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/MonthFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/MonthFragmentsHolder.kt"
             line="45"
             column="35"/>
     </issue>
@@ -5318,7 +5318,7 @@
         errorLine1="    val scaledDrawable = BitmapDrawable(res, baseDrawable)"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/extensions/TextView.kt"
+            file="src/main/kotlin/de/lionsun/plantags/extensions/TextView.kt"
             line="14"
             column="26"/>
     </issue>
@@ -5329,7 +5329,7 @@
         errorLine1="    val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)"
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/extensions/View.kt"
+            file="src/main/kotlin/de/lionsun/plantags/extensions/View.kt"
             line="8"
             column="18"/>
     </issue>
@@ -5340,7 +5340,7 @@
         errorLine1="                    background = ColorDrawable(primaryColor)"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="463"
             column="34"/>
     </issue>
@@ -5351,7 +5351,7 @@
         errorLine1="                    background = ColorDrawable(primaryColor)"
         errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="463"
             column="34"/>
     </issue>
@@ -5362,7 +5362,7 @@
         errorLine1="                        root.background = ColorDrawable(backgroundColor)"
         errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="781"
             column="43"/>
     </issue>
@@ -5373,7 +5373,7 @@
         errorLine1="                        root.background = ColorDrawable(backgroundColor)"
         errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="781"
             column="43"/>
     </issue>
@@ -5384,7 +5384,7 @@
         errorLine1="            root.background = ColorDrawable(backgroundColor)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="947"
             column="31"/>
     </issue>
@@ -5395,7 +5395,7 @@
         errorLine1="            root.background = ColorDrawable(backgroundColor)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="947"
             column="31"/>
     </issue>
@@ -5406,7 +5406,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="53"
             column="35"/>
     </issue>
@@ -5417,7 +5417,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="53"
             column="35"/>
     </issue>
@@ -5428,7 +5428,7 @@
         errorLine1="            root.background = ColorDrawable(Color.WHITE)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="290"
             column="31"/>
     </issue>
@@ -5439,7 +5439,7 @@
         errorLine1="            root.background = ColorDrawable(Color.WHITE)"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="290"
             column="31"/>
     </issue>
@@ -5450,7 +5450,7 @@
         errorLine1="                    root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="303"
             column="39"/>
     </issue>
@@ -5461,7 +5461,7 @@
         errorLine1="                    root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="303"
             column="39"/>
     </issue>
@@ -5472,7 +5472,7 @@
         errorLine1="            periodPickerHolder.background = ColorDrawable(getProperBackgroundColor())"
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/WidgetListConfigureActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/WidgetListConfigureActivity.kt"
             line="64"
             column="45"/>
     </issue>
@@ -5483,7 +5483,7 @@
         errorLine1="            periodPickerHolder.background = ColorDrawable(getProperBackgroundColor())"
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/WidgetListConfigureActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/WidgetListConfigureActivity.kt"
             line="64"
             column="45"/>
     </issue>
@@ -5494,7 +5494,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/YearFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/YearFragmentsHolder.kt"
             line="45"
             column="35"/>
     </issue>
@@ -5505,7 +5505,7 @@
         errorLine1="        binding.root.background = ColorDrawable(requireContext().getProperBackgroundColor())"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/YearFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/YearFragmentsHolder.kt"
             line="45"
             column="35"/>
     </issue>
@@ -5516,7 +5516,7 @@
         errorLine1="    override fun onTouchEvent(event: MotionEvent): Boolean {"
         errorLine2="                 ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/views/MyScrollView.kt"
+            file="src/main/kotlin/de/lionsun/plantags/views/MyScrollView.kt"
             line="28"
             column="18"/>
     </issue>
@@ -5527,7 +5527,7 @@
         errorLine1="                layout.setOnTouchListener { _, motionEvent ->"
         errorLine2="                ^">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="326"
             column="17"/>
     </issue>
@@ -5538,7 +5538,7 @@
         errorLine1="                layout.setOnTouchListener { _, motionEvent ->"
         errorLine2="                                          ^">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="326"
             column="43"/>
     </issue>
@@ -5549,7 +5549,7 @@
         errorLine1="        binding.weekViewHoursScrollview.setOnTouchListener { _, _ -> true }"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="79"
             column="9"/>
     </issue>
@@ -5560,7 +5560,7 @@
         errorLine1="        binding.weekViewHoursScrollview.setOnTouchListener { _, _ -> true }"
         errorLine2="                                                           ~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="79"
             column="60"/>
     </issue>
@@ -6220,7 +6220,7 @@
         errorLine1="                    eventItemTime.text = &quot;${eventItemTime.text}$startDayString - $endTimeString$endDayString&quot;"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/DayEventsAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/DayEventsAdapter.kt"
             line="104"
             column="42"/>
     </issue>
@@ -6231,7 +6231,7 @@
         errorLine1="                    eventItemTime.text = &quot;${eventItemTime.text}$startDayString$endDayString&quot;"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/DayEventsAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/DayEventsAdapter.kt"
             line="107"
             column="42"/>
     </issue>
@@ -6242,7 +6242,7 @@
         errorLine1="                    eventItemTime.text = &quot;${eventItemTime.text} - ${Formatter.getTimeFromTS(activity, listEvent.endTS)}&quot;"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/EventListAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/EventListAdapter.kt"
             line="143"
             column="42"/>
     </issue>
@@ -6253,7 +6253,7 @@
         errorLine1="                    eventItemTime.text = &quot;${eventItemTime.text} (${Formatter.getDateDayTitle(endCode)})&quot;"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/adapters/EventListAdapter.kt"
+            file="src/main/kotlin/de/lionsun/plantags/adapters/EventListAdapter.kt"
             line="149"
             column="42"/>
     </issue>
@@ -6264,7 +6264,7 @@
         errorLine1="            exportEventsFilename.setText(&quot;${activity.getString(R.string.events)}_${activity.getCurrentFormattedDateTime()}&quot;)"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/dialogs/ExportEventsDialog.kt"
+            file="src/main/kotlin/de/lionsun/plantags/dialogs/ExportEventsDialog.kt"
             line="40"
             column="42"/>
     </issue>
@@ -6275,7 +6275,7 @@
         errorLine1="            binding.repeatTypeCount.setText((-repeatLimit).toString())"
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/dialogs/RepeatLimitTypePickerDialog.kt"
+            file="src/main/kotlin/de/lionsun/plantags/dialogs/RepeatLimitTypePickerDialog.kt"
             line="56"
             column="45"/>
     </issue>
@@ -6286,7 +6286,7 @@
         errorLine1="            label.text = &quot;$dayLetter\n${curDay.dayOfMonth}&quot;"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragment.kt"
             line="300"
             column="26"/>
     </issue>
@@ -6297,7 +6297,7 @@
         errorLine1="        binding.weekViewWeekNumber.text = &quot;${getString(org.fossify.commons.R.string.week_number_short)} $weekNumber&quot;"
         errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/WeekFragmentsHolder.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/WeekFragmentsHolder.kt"
             line="164"
             column="43"/>
     </issue>
@@ -6308,7 +6308,7 @@
         errorLine1="                text = day.value.toString()"
         errorLine2="                       ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/activities/WidgetMonthlyConfigureActivity.kt"
+            file="src/main/kotlin/de/lionsun/plantags/activities/WidgetMonthlyConfigureActivity.kt"
             line="228"
             column="24"/>
     </issue>
@@ -6319,7 +6319,7 @@
         errorLine1="            topNavigationBinding.topValue.text = mYear.toString()"
         errorLine2="                                                 ~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calendar/fragments/YearFragment.kt"
+            file="src/main/kotlin/de/lionsun/plantags/fragments/YearFragment.kt"
             line="182"
             column="50"/>
     </issue>

@@ -4,4 +4,28 @@
     <color name="default_birthdays_color">@color/md_blue_800</color>
     <color name="default_holidays_color">@color/md_green_700</color>
     <color name="default_anniversaries_color">@color/md_red_400_dark</color>
+
+    <!-- Plan Tags: default light theme (overrides the Commons defaults) -->
+    <color name="plantags_primary">#2B8AD6</color>
+    <color name="plantags_accent">#F26B5B</color>
+    <color name="plantags_ink">#1E2A38</color>
+    <color name="plantags_surface">#FFFFFF</color>
+    <color name="plantags_grid">#E3E8EE</color>
+    <color name="plantags_label">#7B8794</color>
+
+    <color name="default_text_color">@color/plantags_ink</color>
+    <color name="default_background_color">@color/plantags_surface</color>
+    <color name="default_primary_color">@color/plantags_primary</color>
+    <color name="default_accent_color">@color/plantags_accent</color>
+    <color name="default_app_icon_color">@color/plantags_primary</color>
+
+    <!-- Plan Tags: default palette for new tags -->
+    <color name="tag_coral">#F26B5B</color>
+    <color name="tag_sky">#4DA3E0</color>
+    <color name="tag_green">#34B24B</color>
+    <color name="tag_red">#D32F2F</color>
+    <color name="tag_amber">#F5A623</color>
+    <color name="tag_purple">#8E6BD8</color>
+    <color name="tag_teal">#1FB5A8</color>
+    <color name="tag_pink">#E8639A</color>
 </resources>
