@@ -2,7 +2,7 @@ name: Build Plan Tags
 
 on:
   push:
-    branches: ["**"]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
