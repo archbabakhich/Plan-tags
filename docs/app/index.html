@@ -130,6 +130,8 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;paddin
 .nc{background:var(--field);border-radius:16px;padding:12px 14px;border-inline-start:5px solid var(--c);display:flex;flex-direction:column;gap:6px;cursor:pointer}
 .nc b{font-size:14px}.nc p{margin:0;font-size:13px;line-height:1.7;white-space:pre-wrap;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}.nc small{color:var(--muted);font-size:11.5px}
 .fld textarea{font:inherit;font-size:15px;line-height:1.7;color:var(--ink);background:var(--field);border:1.5px solid transparent;border-radius:12px;padding:11px 12px;width:100%;min-height:170px;resize:vertical;direction:rtl}.fld textarea:focus{outline:0;border-color:var(--primary)}
+.tsel{display:flex;align-items:center;gap:6px;direction:ltr}.tsel select{flex:1;min-width:0;font:inherit;font-size:15px;color:var(--ink);background:var(--field);border:1.5px solid transparent;border-radius:12px;padding:10px 6px}.tsel select:focus{outline:0;border-color:var(--primary)}
+.hint{font-size:11.5px;color:var(--muted);margin:-6px 0 0}
 .muted{color:var(--muted);text-align:center;margin:0}
 [hidden]{display:none!important}
 </style>
@@ -415,21 +417,38 @@ function scrollNow(){var sc=document.getElementById('scroll'),n=new Date();var m
 function sheet(html){document.getElementById('modal').innerHTML='<div class="scrim" id="scrim"><div class="sheet">'+html+'</div></div>';document.getElementById('scrim').addEventListener('click',function(e){if(e.target.id==='scrim')closeSheet()})}
 function closeSheet(){document.getElementById('modal').innerHTML=''}
 
+function tsel(id,val){
+  var hh=Math.floor(val/60),mm=val%60,hs='',ms='',i,mins=[];
+  for(i=0;i<=24;i++)hs+='<option value="'+i+'"'+(i===hh?' selected':'')+'>'+fa(String(i).padStart(2,'0'))+'</option>';
+  for(i=0;i<60;i+=5)mins.push(i);if(mins.indexOf(mm)<0){mins.push(mm);mins.sort(function(a,b){return a-b})}
+  mins.forEach(function(v){ms+='<option value="'+v+'"'+(v===mm?' selected':'')+'>'+fa(String(v).padStart(2,'0'))+'</option>'});
+  return '<div class="tsel"><select id="'+id+'h" aria-label="ساعت">'+hs+'</select><span>:</span><select id="'+id+'m" aria-label="دقیقه">'+ms+'</select></div>';
+}
+function rdT(id,fb){var h=document.getElementById(id+'h'),m=document.getElementById(id+'m');if(!h||!m)return fb;var v=(+h.value)*60+(+m.value);return isNaN(v)?fb:Math.min(v,1440)}
+function parseTimes(t){
+  var n=String(t).replace(/[۰-۹]/g,function(c){return '۰۱۲۳۴۵۶۷۸۹'.indexOf(c)}).replace(/[٠-٩]/g,function(c){return '٠١٢٣٤٥٦٧٨٩'.indexOf(c)});
+  var m=/(?:(?:در|از)\s*)?(?:ساعت\s*)?(\d{1,2})(?:[:٫.](\d{2}))?\s*(?:تا|الی|-|–|—)\s*(\d{1,2})(?:[:٫.](\d{2}))?/.exec(n);
+  if(!m)return null;
+  var h1=+m[1],m1=+(m[2]||0),h2=+m[3],m2=+(m[4]||0);
+  if(h1>24||h2>24||m1>59||m2>59)return null;
+  var a=h1*60+m1,b=h2*60+m2;if(b<=a||a>=1440)return null;
+  return {a:a,b:Math.min(b,1440),title:(n.slice(0,m.index)+' '+n.slice(m.index+m[0].length)).replace(/\s+/g,' ').trim()};
+}
 function planSheet(id){
   var p=id?plans.filter(function(x){return x.id===id})[0]:{title:'',tag:filter||tags[0].id,start:540,end:600,allDay:false,date:key(sel)};
   var tg=p.tag,all=!!p.allDay,sure=false,ds=p.done==null?null:p.done;
   function draw(){
     var tp=tags.map(function(t){return '<button class="tp'+(t.id===tg?' on':'')+'" data-t="'+t.id+'"><i style="background:'+t.color+'"></i>'+esc(t.name)+'</button>'}).join('');
     var title=(document.getElementById('f_title')||{}).value;
-    var st=(document.getElementById('f_s')||{}).value,en=(document.getElementById('f_e')||{}).value;
+    
     if(title!==undefined)p.title=title;
-    if(st)p.start=toMin(st);if(en)p.end=toMin(en);
+    p.start=rdT('f_s',p.start);p.end=rdT('f_e',p.end);
     sheet('<h2>'+(id?'ویرایش برنامه':'برنامه جدید')+'</h2>'+
       '<label class="fld">عنوان<input type="text" id="f_title" value="'+esc(p.title)+'" placeholder="مثلاً نقشه‌کشی"></label>'+
       '<div class="fld">برچسب<div class="tagpick">'+tp+'</div></div>'+
       '<div class="fld">وضعیت<div class="tagpick"><button class="tp'+(ds===true?' on':'')+'" data-d="1">✓ انجام شد</button><button class="tp'+(ds===false?' on':'')+'" data-d="0">✕ انجام نشد</button><button class="tp'+(ds===null?' on':'')+'" data-d="n">هنوز مشخص نیست</button></div></div>'+
       '<label class="chk"><input type="checkbox" id="f_all"'+(all?' checked':'')+'> همه‌روز</label>'+
-      (all?'':'<div class="row"><label class="fld">شروع<input type="time" id="f_s" value="'+String(Math.floor(p.start/60)).padStart(2,'0')+':'+String(p.start%60).padStart(2,'0')+'"></label><label class="fld">پایان<input type="time" id="f_e" value="'+String(Math.floor(p.end/60)).padStart(2,'0')+':'+String(p.end%60).padStart(2,'0')+'"></label></div>')+
+      (all?'':'<div class="row"><div class="fld">شروع'+tsel('f_s',p.start)+'</div><div class="fld">پایان'+tsel('f_e',p.end)+'</div></div><p class="hint">می‌توانید در عنوان هم بنویسید، مثلاً «زبان از ۹ تا ۲۲».</p>')+
       '<div class="btns"><button class="btn main" id="ok">ذخیره</button>'+(id?'<button class="btn del'+(sure?' sure':'')+'" id="del">'+(sure?'مطمئنید؟':'حذف')+'</button>':'')+'<button class="btn" id="cancel">بستن</button></div>');
     var m=document.getElementById('modal');
     m.querySelectorAll('.tp[data-t]').forEach(function(b){b.onclick=function(){tg=b.dataset.t;draw()}});
@@ -437,13 +456,15 @@ function planSheet(id){
     document.getElementById('f_all').onchange=function(){all=this.checked;draw()};
     document.getElementById('cancel').onclick=closeSheet;
     document.getElementById('ok').onclick=function(){
-      var ti=document.getElementById('f_title').value.trim()||tagOf(tg).name;
-      var s=document.getElementById('f_s'),e=document.getElementById('f_e');
-      var a=s?toMin(s.value):0,b=e?toMin(e.value):1440;
+      var ti=document.getElementById('f_title').value.trim();
+      var a=all?0:rdT('f_s',p.start),b=all?1440:rdT('f_e',p.end);
+      var pt=all?null:parseTimes(ti);
+      if(pt){a=pt.a;b=pt.b;ti=pt.title}
+      ti=ti||tagOf(tg).name;
       if(!all&&b<=a)b=Math.min(a+30,1440);
       var rec={id:id||uid(),title:ti,tag:tg,date:p.date,start:all?0:a,end:all?1440:b,allDay:all,done:ds};
       if(id)plans=plans.map(function(x){return x.id===id?rec:x});else plans.push(rec);
-      save();closeSheet();render();
+      save();closeSheet();render();if(!all)window.scrollTo(0,Math.max(0,a/60*HOUR-160));
     };
     var d=document.getElementById('del');
     if(d)d.onclick=function(){if(!sure){sure=true;this.classList.add('sure');this.textContent='مطمئنید؟';return}plans=plans.filter(function(x){return x.id!==id});save();closeSheet();render()};
