@@ -102,6 +102,11 @@ class Config(context: Context) : BaseConfig(context) {
         set(quickFilterCalendars) = prefs.edit().remove(QUICK_FILTER_CALENDARS)
             .putStringSet(QUICK_FILTER_CALENDARS, quickFilterCalendars).apply()
 
+    // Plan Tags shows the tag chips from the first start on, so all existing tags are seeded once
+    var quickFilterInitialized: Boolean
+        get() = prefs.getBoolean("quick_filter_initialized", false)
+        set(quickFilterInitialized) = prefs.edit().putBoolean("quick_filter_initialized", quickFilterInitialized).apply()
+
     fun addQuickFilterCalendar(type: String) {
         val currQuickFilterCalendars = HashSet(quickFilterCalendars)
         currQuickFilterCalendars.add(type)

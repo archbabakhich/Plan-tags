@@ -1,5 +1,8 @@
 package de.lionsun.plantags.adapters
 
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.InsetDrawable
 import android.view.ViewGroup
 import androidx.core.view.updateLayoutParams
 import androidx.recyclerview.widget.RecyclerView
@@ -9,6 +12,8 @@ import de.lionsun.plantags.databinding.QuickFilterCalendarViewBinding
 import de.lionsun.plantags.extensions.config
 import de.lionsun.plantags.models.CalendarEntity
 import org.fossify.commons.extensions.adjustAlpha
+import org.fossify.commons.extensions.beGone
+import org.fossify.commons.extensions.getContrastColor
 import org.fossify.commons.extensions.getProperTextColor
 import org.fossify.commons.helpers.LOWER_ALPHA
 
@@ -90,14 +95,25 @@ class QuickFilterCalendarAdapter(
             val isSelected = activeKeys.contains(calendar.id)
             binding.apply {
                 quickFilterCalendar.text = calendar.title
-                val textColor = if (isSelected) textColorActive else textColorInactive
-                quickFilterCalendar.setTextColor(textColor)
 
-                val indicatorHeightRes =
-                    if (isSelected) R.dimen.quick_filter_active_line_size else R.dimen.quick_filter_inactive_line_size
-                quickFilterCalendarColor.layoutParams.height =
-                    root.resources.getDimensionPixelSize(indicatorHeightRes)
-                quickFilterCalendarColor.setBackgroundColor(calendar.color)
+                // each tag is a pill: filled with the tag color when shown, outlined when hidden
+                val density = root.resources.displayMetrics.density
+                val pill = GradientDrawable().apply {
+                    shape = GradientDrawable.RECTANGLE
+                    cornerRadius = 20f * density
+                    if (isSelected) {
+                        setColor(calendar.color)
+                    } else {
+                        setColor(Color.TRANSPARENT)
+                        setStroke((1.5f * density).toInt(), calendar.color)
+                    }
+                }
+                val verticalInset = (6f * density).toInt()
+                val horizontalInset = (4f * density).toInt()
+                quickFilterCalendar.background =
+                    InsetDrawable(pill, horizontalInset, verticalInset, horizontalInset, verticalInset)
+                quickFilterCalendar.setTextColor(if (isSelected) calendar.color.getContrastColor() else textColorActive)
+                quickFilterCalendarColor.beGone()
 
                 // avoid too quick clicks, could cause glitches
                 quickFilterCalendar.setOnClickListener {

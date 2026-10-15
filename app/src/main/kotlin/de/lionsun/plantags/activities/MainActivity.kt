@@ -281,6 +281,11 @@ class MainActivity : SimpleActivity(), RefreshRecyclerViewListener {
             storeStateVariables()
             updateWidgets()
             updateTextColors(calendarCoordinator)
+            calendarFab.setColors(
+                getProperTextColor(),
+                resources.getColor(R.color.plantags_accent, theme),
+                getProperBackgroundColor()
+            )
             fabExtendedOverlay.background =
                 getProperBackgroundColor().adjustAlpha(0.8f).toDrawable()
             fabEventLabel.setTextColor(getProperTextColor())
@@ -420,6 +425,11 @@ class MainActivity : SimpleActivity(), RefreshRecyclerViewListener {
 
     private fun setupQuickFilter() {
         eventsHelper.getCalendars(this, false) {
+            if (!config.quickFilterInitialized && it.isNotEmpty()) {
+                config.quickFilterCalendars = it.mapNotNull { calendar -> calendar.id?.toString() }.toSet()
+                config.quickFilterInitialized = true
+            }
+
             val quickFilterCalendars = config.quickFilterCalendars
             binding.quickCalendarFilter.adapter =
                 QuickFilterCalendarAdapter(this, it, quickFilterCalendars) {

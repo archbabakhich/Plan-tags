@@ -27,12 +27,12 @@
     <string name="end_before_start">The event cannot end earlier than it starts</string>
     <string name="event_added">Event added successfully</string>
     <string name="event_updated">Event updated successfully</string>
-    <string name="filter_events_by_type">Filter events by calendar</string>
+    <string name="filter_events_by_type">Filter events by tag</string>
     <string name="please_fill_location">Please fill in a location to be shown on a map</string>
     <string name="public_event_notification_text">An event is upcoming</string>
-    <string name="everything_filtered_out">You have filtered out all calendars</string>
+    <string name="everything_filtered_out">You have filtered out all tags</string>
     <string name="event_color">Event color</string>
-    <string name="default_calendar_color">Default calendar color</string>
+    <string name="default_calendar_color">Default tag color</string>
 
     <!-- Tasks -->
     <string name="task">Task</string>
@@ -138,13 +138,13 @@
     <string name="import_events_from_ics">Import events from an .ics file</string>
     <string name="import_events_from_ics_pro">Import events from an .ics file (Pro)</string>
     <string name="export_events_to_ics">Export events to an .ics file</string>
-    <string name="default_event_type">Default calendar</string>
+    <string name="default_event_type">Default tag</string>
     <string name="export_past_events_too">Export past events too</string>
     <string name="export_tasks">Export tasks</string>
     <string name="export_past_entries">Export past entries too</string>
-    <string name="include_event_types">Include calendars</string>
+    <string name="include_event_types">Include tags</string>
     <string name="filename_without_ics">Filename (without .ics)</string>
-    <string name="ignore_event_types">Ignore calendars in the file, always use the default one</string>
+    <string name="ignore_event_types">Ignore tags in the file, always use the default one</string>
 
     <!-- Event details -->
     <string name="location">Location</string>
@@ -156,16 +156,16 @@
     <string name="start_week_with_current_day">Start week with the current day</string>
 
     <!-- Calendars -->
-    <string name="event_types">Calendars</string>
-    <string name="add_new_type">Add a new calendar</string>
-    <string name="edit_type">Edit calendar</string>
-    <string name="type_already_exists">Calendar with this title already exists</string>
+    <string name="event_types">Tags</string>
+    <string name="add_new_type">Add a new tag</string>
+    <string name="edit_type">Edit tag</string>
+    <string name="type_already_exists">A tag with this title already exists</string>
     <string name="color">Color</string>
-    <string name="regular_event">Local calendar</string>
+    <string name="regular_event">General</string>
     <string name="offline_never_synced">Offline (never synced)</string>
-    <string name="cannot_delete_default_type">Built-in calendar cannot be deleted</string>
-    <string name="select_event_type">Select a calendar</string>
-    <string name="move_events_into_default">Move affected events into the default calendar</string>
+    <string name="cannot_delete_default_type">The built-in tag cannot be deleted</string>
+    <string name="select_event_type">Select a tag</string>
+    <string name="move_events_into_default">Move affected events into the default tag</string>
     <string name="remove_affected_events">Permanently remove affected events</string>
     <string name="unsync_caldav_calendar">To remove a CalDAV calendar you have to unsynchronize it</string>
 
@@ -182,7 +182,7 @@
     <string name="importing_holidays_failed">Importing holidays failed</string>
 
     <!-- Settings -->
-    <string name="manage_event_types">Manage calendars</string>
+    <string name="manage_event_types">Manage tags</string>
     <string name="start_day_at">Start day at</string>
     <string name="end_day_at">End day at</string>
     <string name="midnight_spanning">Show events spanning across midnight at the top bar</string>
@@ -227,7 +227,7 @@
     <string name="highlight_weekends">Highlight weekends on some views</string>
     <string name="highlight_weekends_color">Color of highlighted weekends</string>
     <string name="allow_changing_time_zones">Allow changing event time zones</string>
-    <string name="manage_quick_filter_event_types">Manage quick filter calendars</string>
+    <string name="manage_quick_filter_event_types">Manage quick filter tags</string>
     <string name="allow_creating_tasks">Allow creating tasks</string>
 
     <!-- CalDAV sync -->
