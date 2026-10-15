@@ -42,14 +42,14 @@ jobs:
         run: ./gradlew bundleGplayRelease assembleGplayRelease --stacktrace
 
       - name: Upload debug APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: plan-tags-debug-apk
           path: app/build/outputs/apk/gplay/debug/*.apk
 
       - name: Upload Play Store bundle and release APK
         if: env.SIGNED == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: plan-tags-release
           path: |
