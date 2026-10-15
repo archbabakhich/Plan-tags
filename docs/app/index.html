@@ -186,7 +186,7 @@ function uid(){return Math.random().toString(36).slice(2,9)}
 function addDays(d,n){var x=new Date(d);x.setDate(x.getDate()+n);return x}
 
 var notes=null, nq='', nf=null, view='tl', per='day', mode='shah', sel=new Date(), filter=null, tags, plans, demo=false;
-try{var s=JSON.parse(store.get('pt_data')||'null');if(s&&(s.v>=2||!s.demo)){tags=s.tags;plans=s.plans;notes=s.notes||null;demo=!!s.demo;mode=s.mode||(s.jalali===false?'greg':'shah')}}catch(e){}
+try{var s=JSON.parse(store.get('plantags-web:data')||'null');if(s&&(s.v>=2||!s.demo)){tags=s.tags;plans=s.plans;notes=s.notes||null;demo=!!s.demo;mode=s.mode||(s.jalali===false?'greg':'shah')}}catch(e){}
 function seed(){
   tags=[{id:'work',name:'کار',color:PALETTE[1]},{id:'study',name:'مطالعه',color:PALETTE[5]},{id:'sport',name:'ورزش',color:PALETTE[2]},{id:'home',name:'خانه',color:PALETTE[0]},{id:'rest',name:'استراحت',color:PALETTE[6]}];
   plans=[];var today=new Date();
@@ -208,7 +208,7 @@ function seed(){
 }
 if(!tags){seed()}
 if(!notes)notes=demo?[{id:uid(),title:'ایده‌های پروژه',text:'یادداشت نمونه: ایده‌ها، فهرست خرید، تماس‌هایی که باید گرفت یا هر چیز دیگری را اینجا بنویسید.\nبرای هر یادداشت می‌توانید یک برچسب رنگی بگذارید.',tag:'work',pin:true,ts:Date.now()}]:[];
-function save(){store.set('pt_data',JSON.stringify({tags:tags,plans:plans,demo:demo,mode:mode,v:2,notes:notes}))}
+function save(){store.set('plantags-web:data',JSON.stringify({tags:tags,plans:plans,demo:demo,mode:mode,v:2,notes:notes}))}
 function tagOf(id){for(var i=0;i<tags.length;i++)if(tags[i].id===id)return tags[i];return {name:'—',color:'#7B8794'}}
 
 function dateParts(d){
